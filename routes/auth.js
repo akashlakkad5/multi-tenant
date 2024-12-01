@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const AuthController = require('../controller');
-const { apiHandler } = require("../utils/payload");
-const { auth } = require("../middleware");
+const { apiHandler } = require("../utils/paylod");
+const { auth } = require("../middelware");
 
 /** Register Route */
 router.post('/register', apiHandler(AuthController.register));
