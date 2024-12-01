@@ -7,7 +7,6 @@ process.on('uncaughtException', (err) => {
 require('dotenv').config();
 
 
-
 const mongooseLoader = require('./loaders/mongoose');
 global.Mongo = require("./utils/mongo");
 

@@ -8,8 +8,6 @@ exports.connect = async () => {
 
             /** Store Database Connection */
             global.dbConnection = await mongoose.connect(process.env.MONGO_URI + `/${process.env.MASTER_DB_NAME}`, {
-                useNewUrlParser: true,
-                useUnifiedTopology: true,
                 family: 4
             });
 
